@@ -6,8 +6,8 @@
     <body>
         <h1> HELLO WORLD</h1>
         <p>I am a webpage.</p>
-        <p><php? 
+        <p><?php
         
-        echo time();></p>
+        echo time();?></p>
     </body>
 </html>
