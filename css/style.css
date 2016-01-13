@@ -1,0 +1,17 @@
+body {
+    background-color: lightblue;
+}
+hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+ul {
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+ul li {
+    display: inline;
+}
+.container {
+    background-color: white;
+}
