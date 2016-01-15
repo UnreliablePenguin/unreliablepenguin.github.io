@@ -61,3 +61,12 @@ button {
     margin-top: 0px;
     padding-top: 0px;
 }
+
+.resumeList ul {
+    text-align: left;
+}
+
+.resumeList li {
+    display: list-item;
+}
+
