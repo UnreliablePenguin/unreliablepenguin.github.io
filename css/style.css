@@ -1,5 +1,7 @@
 body {
     background-color: #657383;
+    
+    background-attachment: scroll;
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -7,6 +9,9 @@ body {
 h1, h2, p, li {
     color: white;
     font-family: "Arial Black", Gadget, sans-serif;
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 hr {
     margin-top: 0px;
@@ -24,4 +29,15 @@ ul li {
     text-align: center;
 }
 .container {
+    background-color: #556373;
+    border-style: solid;
+    border-color: white;
+    margin-right: 4px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: lightgrey;
 }
