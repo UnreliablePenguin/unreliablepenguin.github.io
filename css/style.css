@@ -6,12 +6,12 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     
-    margin: 4px 4px 4px 4px;
+    margin: 12px 12px 12px 12px;
 }
 h1, h2, p, li {
     color: white;
     font-family: "Arial Black", Gadget, sans-serif;
-    margin: 4px 4px 4px 4px;
+    margin: 8px 8px 8px 8px;
 }
 hr {
     margin-top: 0px;
@@ -24,6 +24,8 @@ ul {
 }
 ul li {
     display: inline;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 .header h1{
     text-align: center;
@@ -44,5 +46,13 @@ a:active{
     color: grey;
 }
 button {
-    margin: 3px 4px 3px 4px;
+    margin: 8px 8px 8px 8px;
+}
+resumeBody {
+    color: white;
+    font-family: Arial, sans-serif;
+}
+resumeHeading span{
+    font-size: 18pt;
+    line-height: 150%;
 }
