@@ -1,72 +1,102 @@
 body {
-    background-color: #657383;
-    
-    background-attachment: scroll;
-    background-size: 100%;
+    margin: 4px 4px 4px 4px;
+    background-image: url();
+    background-color: black;
+    background-image: url("back.jpg"); /**/
+    background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
-    
-    margin: 12px 12px 12px 12px;
+    background-size: cover;
+    background-repeat:no-repeat;
 }
-h1, h2, h3, h4, p, li {
+
+#explore {
+    margin-left: auto;
+    margin-right: auto;
+    height: 90px;
+    width: 450px;
+}
+
+#explore .back {
+    position: absolute;
+    background-color: black;
+    opacity: .8;
+    border: 2px darkgrey solid;
+    border-radius: 10%;
+    margin: -10px 0px 0px -10px;
+    height: 115px;
+    width: 470px;
+    z-index:-1;
+}
+
+.welcome {
     color: white;
-    font-family: "Arial Black", Gadget, sans-serif;
-    margin: 8px 8px 8px 8px;
-}
-hr {
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-.navigation ul {
-    margin-bottom: 2px;
-    margin-top: 2px;
-    text-align: right;
-}
-.navigation ul li {
-    display: inline;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-.header h1{
+    position: relative;
     text-align: center;
+    vertical-align: middle;
+    padding-top: 20%;
+    font-family: "Montserrat", sans-serif;
 }
-.container {
-    background-color: #556373;
-    border-style: solid;
-    border-color: white;
+
+.welcome img {
+    position: relative;
+    top: 5px;
+    left: -2px;
 }
-a {
+
+.welcome a {
     text-decoration: none;
     color: white;
 }
-a:hover {
-    color: lightgrey;
+
+.back {
+    position: relative;
+    background-color: black;
+    opacity: 0.8;
+    border: 2px darkgrey solid;
+    z-index: 1;
+    margin-top: 20%;
 }
-a:active{
-    color: grey;
+
+.back .navigation{
+    z-index: 101;
+    opacity: 1;
 }
-button {
-    margin: 8px 8px 8px 8px;
+
+.back .content{
+    z-index: 101;
+    opacity: 1;
 }
-.resume {
+
+.content {
+    font-family: "Montserrat", sans-serif;
     color: white;
-    font-family: Arial, sans-serif;
-}
-.resume h2 {
-    font-size: 2em;
-    line-height: 150%;
-    margin-bottom: 4px;
-}
-.resume p{
-    margin-top: 0px;
-    padding-top: 0px;
+    opacity: 1;
 }
 
-.resumeList ul {
-    text-align: left;
+.content img {
+    float: left;
+    padding-top: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.resumeList li {
-    display: list-item;
+.content p{
+    padding-bottom: 4px;
+    margin: 2px 4px 2px 12px;
 }
 
+.content h1, h2, h3 {
+    margin: 2px 4px 2px 4px;
+    padding: 4px;
+}
+
+.content a{
+    color: lightgrey;
+    text-decoration: none;
+    opacity: 1;
+}
+
+button {
+    margin-left: 12px;
+    margin-bottom: 6px;
+}

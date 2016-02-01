@@ -4,6 +4,7 @@
         <title>Connor Wilkinson</title>
         <!--STYLE GOES HERE-->
         <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <link rel="stylesheet" href="css/menu.css" type="text/css" />
         <link rel="shortcut icon" href="icons/favicon.ico">
         <script type="text/javascript">function myFunction() {
             document.getElementById("git").innerHTML = "<p>In the terminal type 'git config credential.helper store'. </p><p>Then perform a push.</p><p>Your information will be stored.</p>";
@@ -12,26 +13,24 @@
     </head>
     
     <body>
-        <div class="navigation">
-            <ul>
-                <li><a href="index.html">Home</a> | </li>
-                <li><a href="about.html">About Me</a> | </li>
-                <li><a href="projects.html">Projects</a> | </li>
-                <li><a href="resume.html">Resume</a> | </li>
-                <li><a href="#">GIT Help</a></li>
-            </ul>
-        </div>
-        <div class="header">
-        <!--    <img height="128px" src="13983002.png" align="left">-->
-            <h1>CONNOR WILKINSON</h1>
-        </div>
-        
-        <div class="container" height="640px">
-            <h2>Want to know how to store your username/password in the linux terminal on <a href="c9.io" text-decoration="underline">Cloud9</a>?</h2>
-            <p id="git">
-                Click the button
-            </p>
-            <button type="button" onclick="myFunction()">The Button</button>
+        <div class="back">
+            <div class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a> | </li>
+                    <li><a href="about.html">About Me</a> | </li>
+                    <li><a href="projects.html">Projects</a> | </li>
+                    <li><a href="resume.html">Resume</a> | </li>
+                    <li><a href="#">GIT Help</a></li>
+                </ul>
+                <hr>
             </div>
+            <div class="content">
+                <h2>Want to know how to store your username/password in the linux terminal on <a href="c9.io" text-decoration="underline">Cloud9</a>?</h2>
+                <p id="git">
+                    Click the button
+                </p>
+                <button type="button" onclick="myFunction()" margin="6px">The Button</button>
+            </div>
+        </div>
    </body>
 </html>
