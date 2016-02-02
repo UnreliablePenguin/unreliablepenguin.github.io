@@ -11,6 +11,10 @@ body {
     overflow-x: hidden;
 }
 
+body .main {
+    overflow-x: visible;
+}
+
 #explore {
     margin-left: auto;
     margin-right: auto;
