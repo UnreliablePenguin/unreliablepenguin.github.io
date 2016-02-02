@@ -17,22 +17,28 @@ body .main {
 
 #explore {
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;/*
     height: 90px;
-    width: 450px;
+    width: 450px;*/
+    display: inline-block;
+    padding-right: 8px;
+    padding-left: 8px;
+    background-color: rgba(0,0,0,.8);
+    border: 2px darkgrey solid;
 }
 
+/*
 #explore .back {
     position: absolute;
     background-color: black;
     opacity: .8;
     border: 2px darkgrey solid;
-/*    border-radius: 10%;/**/
+/*    border-radius: 10%;
     margin: -10px 0px 0px -10px;
     height: 115px;
     width: 470px;
     z-index:-1;
-}
+}*/
 
 .welcome {
     color: white;
