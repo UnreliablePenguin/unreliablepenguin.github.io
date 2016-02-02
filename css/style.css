@@ -2,11 +2,13 @@ body {
     margin: 4px 4px 4px 4px;
     background-image: url();
     background-color: black;
-    background-image: url("back.jpg"); /**/
+    background-image: url("../images/back.jpg"); /**/
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-repeat:no-repeat;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 #explore {
@@ -54,7 +56,7 @@ body {
     opacity: 0.8;
     border: 2px darkgrey solid;
     z-index: 1;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 .back .navigation{
@@ -71,6 +73,8 @@ body {
     font-family: "Montserrat", sans-serif;
     color: white;
     opacity: 1;
+    height: 10%;
+    max-height: 80%;
 }
 
 .content img {
