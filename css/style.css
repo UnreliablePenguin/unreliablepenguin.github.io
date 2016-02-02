@@ -27,7 +27,7 @@ body .main {
     background-color: black;
     opacity: .8;
     border: 2px darkgrey solid;
-    border-radius: 10%;
+/*    border-radius: 10%;/**/
     margin: -10px 0px 0px -10px;
     height: 115px;
     width: 470px;
@@ -56,11 +56,15 @@ body .main {
 
 .back {
     position: relative;
-    background-color: black;
-    opacity: 0.8;
+    /*background-color: black;
+    opacity: 1;*/
+    background-color: rgba(0,0,0,.8);
     border: 2px darkgrey solid;
     z-index: 1;
     margin-top: 10%;
+}
+#mail {
+    text-decoration: underline;
 }
 
 .back .navigation{
@@ -86,6 +90,7 @@ body .main {
     padding-top: 4px;
     padding-left: 10px;
     padding-right: 10px;
+    opacity: 1;
 }
 
 .content p{
