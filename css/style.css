@@ -1,122 +1,42 @@
-body {
-    margin: 4px 4px 4px 4px;
-    background-image: url();
-    background-color: white;
-  /*  background-image: url("../images/back.jpg"); /**/
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat:no-repeat;
-    overflow: scroll;
-    overflow-x: hidden;
-}
-
-body .main {
-    overflow-x: visible;
-}
-
-#explore {
-    margin-left: auto;
-    margin-right: auto;/*
-    height: 90px;
-    width: 450px;*/
-    display: inline-block;
-    padding-right: 8px;
-    padding-left: 8px;
-    background-color: rgba(0,0,0,.8);
-    border: 2px darkgrey solid;
-}
-
-/*
-#explore .back {
-    position: absolute;
-    background-color: black;
-    opacity: .8;
-    border: 2px darkgrey solid;
-/*    border-radius: 10%;
-    margin: -10px 0px 0px -10px;
-    height: 115px;
-    width: 470px;
-    z-index:-1;
-}*/
-
-.welcome {
-    color: white;
-    position: relative;
-    text-align: center;
-    vertical-align: middle;
-    padding-top: 20%;
-    font-family: "Montserrat", sans-serif;
-}
-
-.welcome img {
-    position: relative;
-    top: 5px;
-    left: -2px;
-}
-
-.welcome a {
-    text-decoration: none;
-    color: white;
-}
-
-.back {
-    position: relative;
-    /*background-color: black;
-    opacity: 1;*/
-    background-color: rgba(0,0,0,.8);
-    border: 2px darkgrey solid;
-    z-index: 1;
-    margin-top: 10%;
-}
-#mail {
-    text-decoration: underline;
-}
-
-.back .navigation{
-    z-index: 101;
-    opacity: 1;
-}
-
-.back .content{
-    z-index: 101;
-    opacity: 1;
+.main {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto Slab', serif;
 }
 
 .content {
-    font-family: "Montserrat", sans-serif;
-    color: white;
-    opacity: 1;
-    height: 10%;
-    max-height: 80%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
-.content img {
-    float: left;
-    padding-top: 4px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 8px;
-    opacity: 1;
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
 }
 
-.content p{
-    padding-bottom: 4px;
-    margin: 2px 4px 2px 12px;
+.parallax {
+  height: 720px;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: black;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-.content h1, h2, h3 {
-    margin: 2px 4px 2px 4px;
-    padding: 4px;
+.image-1 {
+  background-image: url('https://i.imgur.com/JWClxXC.jpg');
 }
 
-.content a{
-    color: lightgrey;
-    text-decoration: none;
-    opacity: 1;
+.holdingthing {
+  font-family: 'Roboto Slab', serif;
+font-family: 'Roboto', sans-serif;
 }
 
-button {
-    margin-left: 12px;
-    margin-bottom: 6px;
+.starfield {
+  height: 100%;
+  margin:0px;
+  padding:0px;
+  background-color: black;
 }
