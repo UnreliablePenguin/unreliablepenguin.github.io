@@ -16,60 +16,70 @@
       <script src="js/stars.js"></script>
     </head>
 
-    <body class="main">
-      <div class="starfield">
+    <body  class="main">
+      <div class="starfield parallax" id="nebula">
       </div>
-      <div class="content">
-        <h1>Software Engineer</h1>
-        <p>
-          Based in Brooklyn, NY, I am focused on expanding my skills and
-          learning as much as I can. I am currently looking for a job, so please
-          don't hesitate to reach out!
-        </p>
-      </div>
-      <div class="parallax image-1">
-      </div>
-      <div class="content">
-        <h1>About Me</h1>
-        <p>
-          I'm originally from Georgia. I started coding 2D platformer games when I was in
-          middle school. From then on, I was hooked. I took web design classes
-          throughout Highschool and went on to study Software Development in
-          college. I graduated from Georgia Gwinnett College in 4 years and got
-          a job for a small company called
-          <a href="https://www.worldwontwait.com">worldwontwait.com</a>. I spent
-          a year there writing low and high level requirements-based tests for
-          a larger company. After that I decided I wanted to get back into
-          writing code. So I moved to Brooklyn, and here we are.
-        </p>
-      </div>
-      <div class="content">
-        <h1>Personal Projects</h1>
+      <div>
+        <div class="content">
+          <h1>Software Engineer</h1>
+          <p>
+            Based in Brooklyn, NY, I am focused on expanding my skills and
+            learning as much as I can. I am currently looking for a job, so please
+            don't hesitate to reach out!
+          </p>
+        </div>
+        <div class="parallax image-1">
+        </div>
+        <div class="content">
+          <h1>About Me</h1>
+          <p>
+            I'm originally from Georgia. I started coding 2D platformer games when I was in
+            middle school. From then on, I was hooked. I took web design classes
+            throughout Highschool and went on to study Software Development in
+            college. I graduated from Georgia Gwinnett College in 4 years and got
+            a job for a small company called
+            <a href="https://www.worldwontwait.com">worldwontwait.com</a>. I spent
+            a year there writing low and high level requirements-based tests for
+            a larger company. After that I decided I wanted to get back into
+            writing code. So I moved to Brooklyn, and here we are.
+          </p>
+        </div>
+        <div class="content">
+          <h1>Personal Projects</h1>
 
-      </div>
-      <div class="content">
-        <h1>Skills and Technologies</h1>
-        <div>
-          <h3>Languages</h3>
-          <div><p>Java - 0123456789</p></div>
-          <div><p>JavaScript</p></div>
-          <div><p>HTML / CSS</p></div>
-          <div><p></p></div>
         </div>
-        <div>
-          <h3>Technologies</h3>
-          <div><img alt="logo"><p>Tech</p></div>
+        <div class="content">
+          <h1>Skills and Technologies</h1>
+          <div>
+            <h3>Languages</h3>
+            <div><p>Java - 0123456789</p></div>
+            <div><p>JavaScript</p></div>
+            <div><p>HTML / CSS</p></div>
+            <div><p></p></div>
+          </div>
+          <div>
+            <h3>Technologies</h3>
+            <div><img alt="logo"><p>Tech</p></div>
+          </div>
+          <div>
+            <h3>Skills</h3>
+            <h5>[Skill]</h5>
+            <p>[Description]</p>
+          </div>
         </div>
-        <div>
-          <h3>Skills</h3>
-          <h5>[Skill]</h5>
-          <p>[Description]</p>
+        <div class="content">
+          <h1>Contact</h1>
+          <p>If you would like to contact me, please email me at <a href="mailto:connor42.w@gmail.com">connor42.w@gmail.com</a></p>
+          <p>Alternatively, I can be reached at <b>(646)653-0264</b> during normal business hours.</p>
         </div>
       </div>
-      <div class="content">
-        <h1>Contact</h1>
-        <p>If you would like to contact me, please email me at <a href="mailto:connor42.w@gmail.com">connor42.w@gmail.com</a></p>
-        <p>Alternatively, I can be reached at <b>(646)653-0264</b> during normal business hours.</p>
-      </div>
+      <script>
+
+        var nebula = new nebula();
+        nebula.init();
+        nebula.create();
+        nebula.draw();
+
+      </script>
     </body>
 </html>
