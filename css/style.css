@@ -1,8 +1,8 @@
 body {
     margin: 4px 4px 4px 4px;
     background-image: url();
-    background-color: black;
-    background-image: url("../images/back.jpg"); /**/
+    background-color: white;
+  /*  background-image: url("../images/back.jpg"); /**/
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
