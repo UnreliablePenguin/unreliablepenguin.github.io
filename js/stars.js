@@ -5,6 +5,9 @@ function nebula() {
     this.width = 0;
     this.height = 0;
     this.capacity = 100;
+    this.velocity = 20;
+    this.updateRate = 144;
+    this.intervalId = 0;
 }
 
 //Init
@@ -26,11 +29,20 @@ nebula.prototype.init = function() {
   div.appendChild(canvas);
 
   //Add canvas to THIS
-  this.canvas = canvas;
+  self.canvas = canvas;
 
   //Expand the canvas to match window size
-  this.canvas.width = this.width - 20; //To accomodate the scroll bar
-  this.canvas.height = this.height;
+  self.canvas.width = self.width - 20; //To accomodate the scroll bar
+  self.canvas.height = self.height;
+
+  //Assign a listener to listen for a screen size change
+  window.addEventListener('resize', function resize(event) {
+    self.width = window.innerWidth;
+    self.height = window.innerHeight;
+    self.canvas.width = self.width-20;
+    self.canvas.height = self.height;
+    self.draw()
+  });
 }
 
 //Star
@@ -55,6 +67,14 @@ nebula.prototype.create = function() {
     stars[i] = new star(x, y, size)
   }
   this.stars = stars;
+
+  var self = this;
+
+  //Update Position Timer
+  this.intervalId = setInterval(function() {
+    self.update();
+    self.draw();
+  }, 1000 / self.updateRate);
 }
 
 //Actually drawing stuff
@@ -72,5 +92,17 @@ nebula.prototype.draw = function() {
     var star = this.stars[i];
     context.fillRect(star.x, star.y, star.size, star.size);
   }
+}
 
+//Add Position Update function
+nebula.prototype.update = function() {
+  //Move each star
+  for(var i=0; i<this.capacity; i++) {
+    var star = this.stars[i];
+    star.y += this.velocity*star.size/144;
+    if(star.y > this.height) {
+      this.stars[i].x = Math.random()*this.width;
+      this.stars[i].y = 0;
+    }
+  }
 }
