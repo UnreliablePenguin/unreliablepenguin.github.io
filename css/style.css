@@ -1,8 +1,5 @@
 body {
   overflow-x: hidden;
-}
-
-.main {
   margin: 0px;
   padding: 0px;
   border: 0px;
@@ -12,30 +9,15 @@ body {
   background-color: #C0BCB5;
 }
 
-.content {
-  background-color: #C0BCB5;
-}
-
-h1, h2, h3 {
-  font-family: 'Roboto', sans-serif;
-  padding: 4px 8px;
-}
-
-.content h1 {
-  margin-left: 12%;
-  background-color: #3A506B;
-  border-top-left-radius: 90px;
-  border-bottom-left-radius: 90px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  color: #FFFFFF;
-}
-
-.content p {
-  margin-left: 16%;
+h3 {
+  margin-top: 8px;
+  padding: 8px;
+  padding-top: 16px;
+  clear: both;
 }
 
 .parallax {
-  height: 720px;
+  height: 70vh;
   background-repeat: no-repeat;
   background-position: right;
   background-color: black;
@@ -44,16 +26,82 @@ h1, h2, h3 {
 }
 
 .image-1 {
-  background-image: url('https://i.imgur.com/JWClxXC.jpg');
+  background-image: url('https://images.unsplash.com/photo-1516321165247-4aa89a48be28?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=899e2558d4cef07927641f0ecef4aa6c&auto=format&fit=crop&w=1994&q=80');
+  background-color: grey;
 }
 
-.starfield {
-  width: 100%;
-	height: 100%;
-	left: 0px;
-	top: 0px;
-  bottom: 100vh;
-	z-index: -1;
-  background-color: black;
+.main-header {
+  border: none;
+  padding: 20vh 8px;
+  font: bold 48px/64px;
+  color: white;
+}
+
+.content {
+  padding: 14px 20%;
+}
+
+.container {
+  height: 100%;
+  margin-bottom: 8px;
+}
+
+.chip {
+  margin: 4px 6px;
+  padding: 4px 8px;
+  border-radius: 90px;
+  display: inline;
+  float: left;
+}
+
+.tech {
+  margin: 4px;
+  padding: 4px 8px;
+  text-align: center;
   display: inline-block;
+}
+
+.tech .logo {
+  font-size: 64px;
+}
+
+.main-color {
+  background-color: #EFFEFF;
+  color: #000;
+}
+
+.secondary-color {
+ background-color: #3D5A80;
+ color: #FFF;
+}
+
+.accent-1 {
+  background-color: #82EDB2 !important;
+  color: #000;
+}
+.accent-2 {
+  background-color: #EE6C4D !important;
+  color: #FFF;
+}
+.accent-3, .accent-3 p, .accent-3 a {
+  background-color: #293241 !important;
+  color: #FFF !important;
+}
+
+.font-accent-1 {
+  color: #82EDB2 !important;
+}
+.font-accent-2 {
+  color: #EE6C4D !important;
+}
+.font-accent-3 {
+  color: #293241 !important;
+}
+
+.shadow-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.shadow-2 {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
