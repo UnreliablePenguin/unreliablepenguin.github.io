@@ -7,11 +7,11 @@ nav {
   position: fixed;
   top: 0;
   background-blend-mode: lighten;
-  background-color: rgba(255,255,255, .1);
+  background-color: rgba(255,255,255, .45);
 }
 
 nav a {
-  padding: 4px 8px;
+  padding: 6px 8px;
   float: left;
   color: black;
   text-decoration: none;
@@ -21,6 +21,7 @@ nav a {
 
 nav a:hover {
   color: grey;
+  background-color: rgba(255,255,255, .8);
 }
 
 nav a:active {

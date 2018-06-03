@@ -27,7 +27,8 @@ h3 {
 
 .image-1 {
   background-image: url('https://images.unsplash.com/photo-1516321165247-4aa89a48be28?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=899e2558d4cef07927641f0ecef4aa6c&auto=format&fit=crop&w=1994&q=80');
-  background-color: grey;
+  background-color: rgba(120,120,120, .3);
+  background-blend-mode: color;
 }
 
 .main-header {
@@ -39,6 +40,16 @@ h3 {
 
 .content {
   padding: 14px 20%;
+}
+
+.content a {
+  font: bold;
+  color: #EE6C4D;
+  text-decoration: none;
+}
+
+.content a:hover {
+  color: grey;
 }
 
 .container {
