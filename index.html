@@ -14,18 +14,20 @@
       <link rel="stylesheet" href="css/nav.css" type="text/css" />
       <link rel="stylesheet" href="css/cards.css" type="text/css" />
       <link rel="shortcut icon" type="image/png" href="images/icons/favicon.ico">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <script src="js/stars.js"></script>
     </head>
 
-    <body>
-      <nav id="navbar">
-        <a href="#">Connor Wilkinson</a>
+    <body id="top">
+      <nav class="accent-3" id="navbar">
+        <a href="#top">Connor Wilkinson</a>
         <div class="nav-right">
-          <a href="#">About</a>
-          <a href="#">Projects</a>
-          <a href="#">Contact</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#tech">Technologies</a>
+          <a href="#contact">Contact</a>
         </div>
       </nav>
       <div class="parallax image-1">
@@ -41,13 +43,13 @@
         </div>
       </div>
       <div class="content main-color">
-        <h1>About Me</h1>
+        <h1 id="about">About Me</h1>
         <p>
           I am originally from Atlanta, Georgia. I started out coding 2D platformer games in my spare time. From there I decided to take some web design classes and  went on to study Software Development in college. I graduated from Georgia Gwinnett College in 4 years and was immediately hired at a start-up company called <a href="https://www.worldwontwait.com">worldwontwait.com</a>. I worked there for a year writing low and high level requirements-based tests for a larger company. After that, I decided I wanted to get back into actually writing code. So I moved to Brooklyn, and here we are.
         </p>
       </div>
       <div class="content secondary-color">
-        <h1>Personal Projects</h1>
+        <h1 id="projects">Personal Projects</h1>
         <div class="project-container">
           <div class="project-card accent-2">
             <a href="#">
@@ -59,7 +61,7 @@
         </div>
       </div>
       <div class="content main-color .shadow-2">
-        <h1>Skills and Technologies</h1>
+        <h1 id="tech">What I Use</h1>
           <h3>Languages</h3>
           <div class="container">
             <p class="chip accent-1">Java <span class="fa fa-check font-accent-3"></span></p>
@@ -95,7 +97,7 @@
         </div>
       </div>
       <div class="content secondary-color">
-        <h1>Contact</h1>
+        <h1 id="contact">Contact</h1>
         <p>If you would like to contact me, please email me at <a href="mailto:connor42.w@gmail.com">connor42.w@gmail.com</a></p>
         <p>Alternatively, I can be reached at <b>(646) 653-0264</b> during normal business hours.</p>
       </div>
@@ -106,23 +108,26 @@
       </footer>
 
       <script>
-      // When the user scrolls the page, execute myFunction
-      window.onscroll = function() {myFunction()};
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
 
-      // Get the navbar
-      var navbar = document.getElementById("navbar");
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
 
-      // Get the offset position of the navbar
-      var sticky = navbar.offsetTop;
-
-      // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-      function myFunction() {
-        if (window.pageYOffset >= sticky) {
-          navbar.classList.add("sticky")
-        } else {
-          navbar.classList.remove("sticky");
-        }
-      }
+            // Store hash
+            var hash = this.hash;
+            var offset = 48;
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').stop().animate({
+              scrollTop: $(hash).offset().top-offset
+            }, 800);
+          } // End if
+        });
+      });
       </script>
     </body>
 </html>
