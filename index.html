@@ -11,81 +11,121 @@
       <!--STYLE GOES HERE-->
       <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
       <link rel="stylesheet" href="css/style.css" type="text/css" />
+      <link rel="stylesheet" href="css/nav.css" type="text/css" />
+      <link rel="stylesheet" href="css/cards.css" type="text/css" />
       <link rel="shortcut icon" type="image/png" href="images/icons/favicon.ico">
       <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <script src="js/stars.js"></script>
     </head>
 
-    <body  class="main">
-      <div class="starfield parallax" id="nebula">
-      </div>
-      <div>
-        <div class="content">
-          <h1>Software Engineer</h1>
-          <p>
-            Based in Brooklyn, NY, I am focused on expanding my skills and
-            learning as much as I can. I am currently looking for a job, so please
-            don't hesitate to reach out!
-          </p>
+    <body>
+      <nav id="navbar">
+        <div class="blur">
         </div>
-        <div class="parallax image-1">
+        <a href="#">Connor Wilkinson</a>
+        <div class="nav-right">
+          <a href="#">About</a>
+          <a href="#">Projects</a>
+          <a href="#">Contact</a>
         </div>
-        <div class="content">
-          <h1>About Me</h1>
-          <p>
-            I'm originally from Georgia. I started coding 2D platformer games when I was in
-            middle school. From then on, I was hooked. I took web design classes
-            throughout Highschool and went on to study Software Development in
-            college. I graduated from Georgia Gwinnett College in 4 years and got
-            a job for a small company called
-            <a href="https://www.worldwontwait.com">worldwontwait.com</a>. I spent
-            a year there writing low and high level requirements-based tests for
-            a larger company. After that I decided I wanted to get back into
-            writing code. So I moved to Brooklyn, and here we are.
-          </p>
-        </div>
-		<div class="parallax image-2">
-		</div>
-        <div class="content">
-          <h1>Personal Projects</h1>
-		  <div class="project-card">
-			<img src="" alt="Project Pic">
-			<p class="description"></p>
-			<p class="heading"></p>
-		  </div>
-        </div>
-        <div class="content">
-          <h1>Skills and Technologies</h1>
-          <div>
-            <h3>Languages</h3>
-            <div><p>Java - 0123456789</p></div>
-            <div><p>JavaScript</p></div>
-            <div><p>HTML / CSS</p></div>
-            <div><p></p></div>
+      </nav>
+      <div class="parallax image-1">
+        <div class="main-header">
+          <div class="content">
+            <h1>Software Engineer</h1>
+            <p>
+              Based in Brooklyn, NY, I am focused on expanding my skills as a developer and
+              learning as much as I can. I am currently looking for a job, so please
+              don't hesitate to reach out!
+            </p>
           </div>
-          <div>
-            <h3>Technologies</h3>
-            <div><img alt="logo"><p>Tech</p></div>
-          </div>
-          <div>
-            <h3>Skills</h3>
-            <h5>[Skill]</h5>
-            <p>[Description]</p>
-          </div>
-        </div>
-        <div class="content">
-          <h1>Contact</h1>
-          <p>If you would like to contact me, please email me at <a href="mailto:connor42.w@gmail.com">connor42.w@gmail.com</a></p>
-          <p>Alternatively, I can be reached at <b>(646)653-0264</b> during normal business hours.</p>
         </div>
       </div>
+      <div class="content main-color">
+        <h1>About Me</h1>
+        <p>
+          I am originally from Atlanta, Georgia. I started out coding 2D platformer games in my spare time. From there I decided to take some web design classes and  went on to study Software Development in college. I graduated from Georgia Gwinnett College in 4 years and was immediately hired at a start-up company called <a href="https://www.worldwontwait.com">worldwontwait.com</a>. I worked there for a year writing low and high level requirements-based tests for a larger company. After that, I decided I wanted to get back into actually writing code. So I moved to Brooklyn, and here we are.
+        </p>
+      </div>
+      <div class="content secondary-color">
+        <h1>Personal Projects</h1>
+        <div class="project-container">
+          <div class="project-card accent-2">
+            <a href="#">
+        		<img src="https://images.unsplash.com/photo-1495796880750-1b3facf849d9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7f95231fae119b2bc7467ac5d7a31bef&auto=format&fit=crop&w=1051&q=80"
+             alt="Project Pic">
+        		<p class="description accent-2">A small web app I wrote to create melodies using the linux command "beep". It is made entirely using css and javascript.</p>
+        		<p class="heading accent-3">Beep Master 3000</p></a>
+      	  </div>
+        </div>
+      </div>
+      <div class="content main-color .shadow-2">
+        <h1>Skills and Technologies</h1>
+          <h3>Languages</h3>
+          <div class="container">
+            <p class="chip accent-1">Java <span class="fa fa-check font-accent-3"></span></p>
+            <p class="chip accent-1">JavaScript <span class="fa fa-check font-accent-3"></span></p>
+            <p class="chip accent-1">HTML <span class="fa fa-check font-accent-3"></span></p>
+            <p class="chip accent-1">CSS <span class="fa fa-check font-accent-3"></span></p>
+            <p class="chip accent-1">C <span class="fa fa-check font-accent-3"></span></p>
+            <p class="chip accent-1">C# <span class="fa fa-check font-accent-3"></span></p>
+            <p class="chip accent-1">Ruby <span class="fa fa-check font-accent-3"></span></p>
+            <p class="chip accent-1">SQL <span class="fa fa-check font-accent-3"></span></p>
+          </div>
+          <h3>Technologies</h3>
+          <div class="tech">
+            <span class="logo fa fa-windows font-accent-3"></span>
+            <p>Windows</p>
+          </div>
+          <div class="tech">
+            <span class="logo fa fa-linux font-accent-3"></span>
+            <p>Linux</p>
+          </div>
+          <div class="tech">
+            <span class="logo fa fa-android font-accent-3"></span>
+            <p>Android</p>
+          </div>
+          <div class="tech">
+            <span class="logo fa fa-git font-accent-3"></span>
+            <p>Git</p>
+          </div>
+          <div class="tech">
+            <span class="logo fa fa-wordpress font-accent-3"></span>
+            <p>WordPress</p>
+          </div>
+        </div>
+      </div>
+      <div class="content secondary-color">
+        <h1>Contact</h1>
+        <p>If you would like to contact me, please email me at <a href="mailto:connor42.w@gmail.com">connor42.w@gmail.com</a></p>
+        <p>Alternatively, I can be reached at <b>(646) 653-0264</b> during normal business hours.</p>
+      </div>
+      <footer class="content accent-3">
+        <p>
+        Copyright Connor Wilkinson (c) 2018
+
+        </p>
+      </footer>
+
       <script>
+      // When the user scrolls the page, execute myFunction
+      window.onscroll = function() {myFunction()};
 
-        var nebula = new nebula();
-        nebula.init();
-        nebula.create();
-        nebula.draw();
+      // Get the navbar
+      var navbar = document.getElementById("navbar");
 
+      // Get the offset position of the navbar
+      var sticky = navbar.offsetTop;
+
+      // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
       </script>
     </body>
 </html>
