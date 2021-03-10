@@ -1,3 +1,8 @@
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .project-card {
   margin: 20px;
   background-color: lightblue;
